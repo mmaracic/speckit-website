@@ -17,7 +17,7 @@ Project implements speckit process using Github Copilot.
 ## Project related folder structure
 
 ```text
-speckit-vote/
+speckit-app/
 ├── .github/         # Folder with Github Copilot specific agents, skills and instructions
 ├── role-files/      # Folder with role files with constitution checklists
 ├── role-templates/  # Folder with role templates with constitution questions
@@ -58,7 +58,7 @@ Add role files that will be used by speckit constitution process.
 ### 6. Generate constitution
 Use `/speckit.constitution` command with instructions to process role folder as parameter to generate constitution based on the role files and review it. Forbid usage of documentation folder in the constitution instructions to avoid mixing generated constitution with project/feature documentation.
 ```
-/speckit.constitution Use role files in the role-files/ folder. Do not use files in /documentation/ folder.
+/speckit.constitution Use role files in the role-files/ folder. Do not use files in any other folder.
 ```
 
 ### 7. Validate constitution
