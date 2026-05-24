@@ -37,18 +37,10 @@ uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 ```
 
 #### Update
-> If the init command (or any other) fails try updating speckit cli tools with:
+If the init command (or any other) fails try updating speckit cli tools with:
 ```bash
-uv tool install specify-cli --force
+uv tool install specify-cli --force --from git+https://github.com/github/spec-kit.git
 ```
-
-Also try updating templates on existing project with:
-```bash
-specify init --here --force --integration copilot
-```
-
-Documentation:  
-https://github.com/github/spec-kit/blob/main/docs/upgrade.md
 
 ### 2. Initialize speckit
 Run `specify init .` in the project root to initialize speckit.
